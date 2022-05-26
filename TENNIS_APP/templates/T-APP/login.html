@@ -1,0 +1,26 @@
+{% extends 'T-APP/base.html' %} {% load static %} {% block content %}
+
+<div class="container">
+    <div class="row" style="margin-top:-20px ;margin-right:-230px">
+        <div class="col-sm-8 mx-5">
+
+
+            <img src="{% static 'tclub/images/login.jpg' %}" class="border border-warning img-fluid mt-5 border-primary rounded-circle" alt="Responsive image">
+            <h1 class="text-center text-dark">User Login Page</h1>
+            <form action="" method="post" novalidate>
+                {% csrf_token %} {% for fm in form %}
+
+
+                <div class="form-group">
+                    {{fm.label_tag}} {{fm}} <small class="text-warning">{{fm.errors|striptags}}</small>
+                </div>
+                {% endfor %}
+                <input type="submit" class="btn btn-primary" value="Login"> {% if form.non_field_errors %} {% for error in form.non_field_errors %}
+                <p class="alert alert-danger my-3">{{error}}</p>
+                {% endfor %} {% endif %}
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

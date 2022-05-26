@@ -1,0 +1,70 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-dark text-white   sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" style="margin-top:-5px;" href="{% url 'home' %}">ONLINE BOOKING TENNIS CLUB</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="{% url 'home' %}">HOME</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="{% url 'about' %}">ABOUT</a>
+                </li>
+
+
+
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{% url 'email' %}">EMAIL</a>
+                </li>
+
+
+                {% comment %} {% if request.user.username %} {% endcomment %} {% if request.user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{% url 'display' %}">BOOKING-DETAILS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{% url 'contact' %}">CONTACT</a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{% url 'tennis' %}">TENNIS</a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{% url 'logout' %}"> <span class="material-icons">
+                        logout
+                        </span></a>
+                </li>
+
+                {% else %}
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{% url 'login' %}"> <span class="material-icons">
+                        logout
+                        </span></a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{% url 'signup' %}"><span class="material-icons">
+                        how_to_reg
+                        </span></a>
+                </li>
+
+                {% endif %}
+            </ul>
+
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>

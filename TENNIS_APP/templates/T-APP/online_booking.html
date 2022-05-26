@@ -1,0 +1,39 @@
+{% extends "T-APP/base.html" %} {% load static %} {% load crispy_forms_tags %} {% block content %}
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            <h4 class="text-center alert alert-info">Online Booking Tennis Player</h4>
+            <form action="#" method="POST">
+                {% csrf_token %} 
+                
+                {{form|crispy}}
+
+                <input  onclick="fun();"  type="submit" class="btn btn-outline-info"  >
+
+            </form>
+        </div>
+
+
+
+    </div>
+
+
+
+
+</div>
+{% endblock %}
+
+
+<script type=" text/javascript ">
+    function fun() {
+        alert("Your Detailes Has Been Saved ");
+    }
+</script>
+
+
+

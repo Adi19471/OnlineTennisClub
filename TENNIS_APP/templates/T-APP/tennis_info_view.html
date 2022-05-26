@@ -1,0 +1,33 @@
+{% extends "T-APP/base.html" %} {% load static %} {% block content %} {% load crispy_forms_tags %}
+
+<h2 class="text-center">TENNIS ONLINE BOOKING INFORMATION</h2>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card" style="width: 500px;">
+                <img src="{% static 'tclub/images/t1.jpg'  %}" class="card-img-top" alt="...">
+
+                <h5 class="card-title">Tennis Information</h5>
+                <h5 class="text-danger text-center">Now Your Entering The Tennis Booking Process</h5>
+                <p>Tennis is a racket sport that can be played individually against a single opponent (singles) or between two teams of two players each (doubles). Each player uses a tennis racket that is strung with cord to strike a hollow rubber ball covered
+                    with felt over or around a net and into the opponent's court.</p>
+                <a href="{% url  'tennis'  %}" class="btn btn-info">Online Booking</a>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KCaxZaIZYs8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+{% endblock %}

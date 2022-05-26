@@ -1,0 +1,57 @@
+{% extends "T-APP/base.html" %} {% load static %} {% block content %}
+
+<h4 class="text-center alert alert-info">BOOKING DETAILES </h4>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <table class="table table-hover bg-secondary text-white table-bordered  table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">NAME</th>
+                        <th scope="col">DATE</th>
+                        <th scope="col">TIME</th>
+                        <th scope="col">DURATION OF GAME MINS</th>
+                        <th scope="col">NUMBER OF PLAYER</th>
+                        <th scope="col">ACTION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for st in stu %}
+                    <tr>
+                        <th scope="row">{{st.id}}</th>
+                        <td>{{st.name}}</td>
+                        <td>{{st.date}}</td>
+                        <td>{{st.time}}</td>
+                        <td>{{st.duration_of_game}}</td>
+                        <td>{{st.duration_of_game}}</td>
+                        <td>
+                            <a href="#" onclick="printFunction()" class="btn btn-warning btn-sm">Downlode Print</a>
+
+
+
+
+
+
+
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+
+        </div>
+    </div>
+
+
+</div>
+
+
+<script>
+    function printFunction() {
+        window.print();
+    }
+</script>
+
+{% endblock %}

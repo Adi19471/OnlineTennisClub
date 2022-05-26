@@ -1,0 +1,76 @@
+{% extends "T-APP/base.html" %} {% load static %} {% block content %}
+
+<div class="jumbotron">
+    <h1 class="display-4">TENNIS CLUB</h1>
+    <p class="lead">
+        Tennis is a game played on a rectangular-shaped court, which can be one of many surfaces. It is either played with two players (singles match), or four players (doubles match).
+    </p>
+    <hr class="my-4" />
+    <p>
+        A tennis court is the venue where the sport of tennis is played. It is a firm rectangular surface with a low net stretched across the centre. The same surface can be used to play both doubles and singles matches. A variety of surfaces can be used to create
+        a tennis court, each with its own characteristics which affect the playing style of the game.
+    </p>
+    <a class="btn btn-primary btn-lg" href="{% url 'home' %}" role="button">Learn more</a>
+</div>
+
+<div class="container text-justify bg-lead">
+    <p>
+        Tennis Club is the elite web app for finding tennis partners to play tennis with. Our mission is to connect tennis players and create a welcoming community for all people therefore this is a free service. It will be our privilege to have everyone interested
+        in tennis to be on this web app and make it the best tennis community globally. If you are looking to find tennis players near you or in another area to play tennis with you have come to the right place. We are involved with the tennis community
+        and have been working diligently to solve this problem. We strive to make this an inclusive tennis community for tennis players of all levels so that everyone can find tennis partners near them or in another area for playing tennis. We have tennis
+        players of all levels in our network - beginner, intermediate and advanced so that people of all levels have a better chance of finding a tennis partner. Whether you're looking to hit, practice, rally or play matches we have people with all preferences
+        and you can specify yours as well. In essence this is how to find tennis hitting partners, practice partners, rallying partners, sparring partners and players for playing matches. While you have been looking for tennis partners in your area we
+        have been working to make it easier for you to find other tennis players in your area. Whether you're looking for social, recreational or competitive tennis there are people with all preferences. Tennis Mesh is like a flexible and open tennis
+        league or tennis club for the people where you can find local tennis players online to play competitive games, sets and matches and you can mutually decide whether you want to play on your court or one suggested by your tennis pal. We want you
+        to be able to find a tennis buddy for pick up tennis nearby or in another area both local and global and use us to create the tennis link and meet up for a tennis round or a tennis clash. You can express your interest in other sports as well and
+        connect with people to play other sports also. The Tennis Mesh LLC contact information is here. Our goal is that you are able to connect with more and more tennis players as we continue to grow our global tennis network.
+    </p>
+</div>
+
+<div class="container">
+
+    <div class="row row-cols-1 row-cols-md-2 bg-dark">
+        <div class="col mb-4 ">
+            <div class="card ">
+                <img src="{% static 'tclub/images/play4.gif' %} " class="card-img-top " alt="... " style="height:370px ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Winner Of The Tennis</h5>
+                    <p class="card-text ">"I am delighted that the winners are not only from Spain, but are connected to a club I love. The winner of the Laureus Sport for Good Society Award for 2022 is the Real Madrid Foundation."</p>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4 ">
+            <div class="card ">
+                <img src="{% static 'tclub/images/A2.jpg' %} " class="card-img-top " alt="... " style="height:320px ">
+                <div class="card-body ">
+                    <h5 class="card-title ">COLLEGE TENNIS</h5>
+                    <p class="card-text ">Tennis doesn’t have to end after high school. You can play on a varsity program, through Tennis On Campus or even start your own intramural team at whatever college campus you choose. In addition, there are resources available to help
+                        you pick the program that is right for you</p>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4 ">
+            <div class="card ">
+                <img src="{% static 'tclub/images/ten.jpg' %} " class="card-img-top " alt="... " style="height:320px ">
+                <div class="card-body ">
+                    <h5 class="card-title ">YOUTH TENNIS</h5>
+                    <p class="card-text ">Tennis is easy to learn and tailored for all ages and abilities, giving kids a game that will help them build friendships and learn skills they’ll use for life. The USTA has a range of programs designed for all kids looking for fun
+                        and a positive play experience. Our developmentally appropriate programs include individual and team play, wheelchair programs, and programs for those that need it most..</p>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-4 ">
+            <div class="card ">
+                <img src="{% static 'tclub/images/A1.jpg' %} " class="card-img-top " alt="... " style="height:320px ">
+                <div class="card-body ">
+                    <h5 class="card-title ">OPEN TO ALL</h5>
+                    <p class="card-text ">Tennis is a lifetime sport that can be played and enjoyed by people of any age and of every ability. Whether you're a beginner or you’ve played for years, no other sport delivers the wide variety of benefits that tennis does. Learn
+                        about the sport's benefits, the basic rules, and find a place to play today - and most of all - have fun!.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
